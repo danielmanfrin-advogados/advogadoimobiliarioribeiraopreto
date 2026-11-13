@@ -1,0 +1,77 @@
+PROJETO: Dr. Daniel Manfrin | Direito Imobiliário e Leilões
+
+DOMINIO_BASE = "https://drdanielmanfrin.vercel.app"
+
+Antes de apontar um domínio próprio, substitua todas as ocorrências de https://drdanielmanfrin.vercel.app nas páginas HTML, no sitemap.xml, em robots.txt e em llms.txt pelo domínio definitivo. O endereço acima é provisório e deve ser confirmado no projeto Vercel antes de enviar o sitemap ao Google. O site usa cartões sociais sem imagem, evitando referenciar um arquivo gerenciado que não exista no Vercel.
+
+1. O que está incluído
+
+O site é estático, feito em HTML, CSS e JavaScript puros. As cinco páginas são a inicial, Atuação, Sobre, Perguntas frequentes e Política de privacidade. O atendimento é descrito como remoto em todo o Brasil. Não há páginas ou links de bairros. Os conteúdos são informativos e não prometem resultado, valor, desconto, prazo ou avaliação de cliente.
+
+2. Identificação profissional e revisão antes de publicar
+
+O projeto não inventa número de inscrição, seccional da OAB, endereço, currículo, título ou especialidade. Antes de publicar, confirme a identificação profissional completa, incluindo OAB/UF, valide a descrição da atuação e complete os dados que o profissional efetivamente quiser divulgar. O termo “especialista” foi omitido, pois o Provimento nº 205/2021 da OAB veda anunciar especialidade sem título certificado ou notória especialização nos termos aplicáveis. Confirme a forma final de publicidade com a seccional da OAB competente. As chamadas de contato são neutras e não oferecem preço, gratuidade, desconto ou promessa de êxito.
+
+Referências oficiais consultadas:
+- Provimento nº 205/2021 do Conselho Federal da OAB: https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf
+- Código de Ética e Disciplina da OAB, especialmente arts. 39 a 43: https://www.oab.org.br/publicacoes/AbrirPDF?LivroId=0000004085
+- Orientação institucional da OAB/RS sobre publicidade: https://www2.oabrs.org.br/noticia/publicidade-na-advocacia-saiba-o-que-e-permitido/63959
+
+O conteúdo do site deve ser revisado pelo advogado antes de entrar no ar. Esta observação não substitui a consulta às regras vigentes ou à OAB local.
+
+3. Trocar o telefone e o WhatsApp
+
+Edite somente config.js. Os campos whatsapp e telefone estão em formato internacional, apenas com números: código do Brasil, DDD e número. Para trocar o contato, altere esses dois campos. Todos os botões obtêm o destino dali. Não coloque o número em cada página HTML. O texto padrão de WhatsApp e o nome do site também podem ser ajustados em config.js.
+
+O rastreador usa o endpoint do Apps Script configurado em config.js. Os cliques enviam metadados técnicos descritos na Política de privacidade. O projeto não tem formulário para nome, e-mail ou CPF. Não adicione pixels, analytics, formulários ou cookies sem revisar a política e a configuração antes.
+
+4. Imagens
+
+As fotografias ilustrativas foram solicitadas para geração e têm caminhos reservados no armazenamento gerenciado do Manus. O preview do Manus tenta carregar esses arquivos quando a geração estiver concluída. O pacote Vercel contém um SVG neutro local de fallback para que as páginas não fiquem quebradas caso esse armazenamento não esteja acessível fora do Manus. Para exibir fotos próprias no Vercel, exporte os arquivos gerados ou forneça fotos autorizadas, salve-os em img e atualize os atributos de imagem nas páginas HTML para usar caminhos locais, por exemplo /img/hero.jpg. Os prompts e nomes previstos estão em img/PROMPTS.txt. As imagens são ilustrativas e não retratam o advogado, a equipe, clientes ou casos.
+
+5. Apps Script e planilha Google
+
+A pasta apps-script contém o Code.gs copiado do anexo do projeto. Para instalar ou atualizar:
+1. Abra a planilha Google que receberá os cliques.
+2. Acesse Extensões > Apps Script.
+3. Substitua o código pelo conteúdo de apps-script/Code.gs.
+4. Execute setup() uma vez e conceda as permissões solicitadas. A função cria/atualiza os cabeçalhos das abas Cliques e Resumo.
+5. Acesse Implantar > Gerenciar implantações, edite a implantação existente, selecione Nova versão e implante. Mantenha o acesso definido como Qualquer pessoa para que o site estático possa enviar os cliques. Ao editar a implantação existente, a URL /exec permanece a mesma.
+6. Confirme que a URL /exec retorna “ok v2”. Se a planilha já tiver linhas antigas desalinhadas, faça uma cópia de segurança e execute migrarLinhasAntigas() uma vez.
+
+Para um relatório por site, selecione os dados da aba Cliques e escolha Inserir > Tabela dinâmica. Use Site em Linhas e Botão em Valores, configurado como contagem. O cabeçalho do script chama a coluna de Botão.
+
+Os eventos do telefone e do WhatsApp são registrados no momento do clique. O tracker envia título e utm_source, mas o Code.gs copiado recebe esses campos sem gravá-los nas 19 colunas da aba Cliques; a origem é resumida ao domínio. O endpoint GET é público e não autentica cada evento, então podem ocorrer registros automatizados ou forjados. Não trate a contagem como prova de contato humano. A conversa e os dados informados nela ficam sujeitos aos canais e políticas dos serviços usados.
+
+6. Compilar e publicar na Vercel
+
+O package.json não contém dependências. Na raiz do projeto, use:
+
+npm install --package-lock=false
+npm run build
+
+O comando de build cria a pasta dist. O projeto contém vercel.json com Framework Preset Other, comando npm run build e diretório de saída dist. Na Vercel, importe o repositório GitHub e confira esses valores antes de concluir. Não há etapa de framework nem dependência externa.
+
+Não publique antes de confirmar OAB/UF, domínio, canal do responsável pela privacidade, prazo de retenção da planilha e imagens que devem ser servidas pelo Vercel. A política de privacidade descreve a coleta atual, mas o responsável deve confirmar a configuração e o período real de retenção antes do lançamento.
+
+7. Google Search Console
+
+Depois de publicar no domínio definitivo, entre no Google Search Console e adicione uma propriedade para o domínio ou uma propriedade prefixo de URL. Conclua a verificação de propriedade seguindo a instrução exibida pelo Google. Depois, envie o sitemap no menu Sitemaps, usando o endereço https://SEU-DOMINIO/sitemap.xml. Atualize os links canônicos e as URLs em sitemap.xml, robots.txt e llms.txt quando mudar o domínio. A inclusão no Search Console não garante posição nos resultados de busca.
+
+8. Perfil da empresa no Google
+
+Crie ou atualize um Perfil da Empresa no Google somente quando houver elegibilidade e um endereço real e verificável para o profissional/escritório. Não invente endereço nem crie uma ficha para uma área de atendimento sem local físico elegível. Siga as regras vigentes do Google e da OAB.
+
+9. Estrutura do projeto
+
+- index.html: página inicial.
+- servicos/index.html: áreas de atuação e informações sobre três temas.
+- sobre/index.html: apresentação institucional e aviso para completar identificação.
+- perguntas-frequentes/index.html: perguntas e respostas gerais.
+- politica-de-privacidade/index.html: dados e rastreamento.
+- style.css: apresentação responsiva e acessível.
+- config.js: telefone, WhatsApp, mensagens, site e endpoint.
+- tracker.js: atualização dos links e registro dos cliques.
+- sitemap.xml, robots.txt e llms.txt: apoio à indexação e à leitura por sistemas automatizados.
+- apps-script/Code.gs: integração fornecida para a planilha.
+- build.js, package.json e vercel.json: build e hospedagem estática na Vercel.

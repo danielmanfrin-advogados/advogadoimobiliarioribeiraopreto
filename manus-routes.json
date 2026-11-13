@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Início"
+    },
+    {
+      "path": "/servicos/",
+      "title": "Atuação"
+    },
+    {
+      "path": "/sobre/",
+      "title": "Sobre"
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "title": "Perguntas frequentes"
+    },
+    {
+      "path": "/politica-de-privacidade/",
+      "title": "Política de privacidade"
+    }
+  ]
+}

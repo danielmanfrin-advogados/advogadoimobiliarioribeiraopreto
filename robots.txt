@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drdanielmanfrin.vercel.app/sitemap.xml
