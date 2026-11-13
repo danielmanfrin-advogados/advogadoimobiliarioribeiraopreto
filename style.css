@@ -10,3 +10,15 @@ details{border:1px solid var(--lin);border-radius:16px;background:#fff;margin-bo
 @media(min-width:760px){nav.menu{display:flex}.duas{grid-template-columns:1fr 1fr;gap:56px}.grade{grid-template-columns:repeat(3,1fr)}.mini{grid-template-columns:repeat(4,1fr)}.fgrid{grid-template-columns:1.3fr 1fr 1.2fr}.barra{display:none}body{padding-bottom:0}.hero-card{margin-left:max(16px,calc((100% - 1260px)/2));margin-right:max(16px,calc((100% - 1260px)/2));border-radius:30px;margin-top:-82px}.hero-content{padding-top:174px;padding-bottom:90px}.detail-layout{grid-template-columns:1.08fr .92fr}.service-detail:nth-child(odd) .detail-photo{order:-1}.cta-box{flex-direction:row;align-items:center;justify-content:space-between;padding:48px 52px}.cta-box .acoes{align-self:center;min-width:180px;flex-direction:column}.cta-box .acoes .btn{flex:initial;width:100%}}
 @media(max-width:380px){.pill{padding-left:10px;gap:6px}.logo{font-size:.9rem}.monograma{width:36px;height:36px}.btn.peq{padding:9px 11px}.hero-card{min-height:610px}.hero-content{padding-top:146px}.hero-card p.sub{font-size:1.05rem}.card .corpo{padding:18px}.barra .btn{font-size:.93rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Retrato e identificação biográfica oficial */
+.profile-figure{margin:0}
+.profile-portrait{display:block;width:100%;height:auto;object-fit:cover;border-radius:10px}
+.profile-caption{margin:10px 4px 0;color:var(--mut);font-size:.84rem;line-height:1.45}
+.profile-caption a,.profile-contact a{color:var(--esc);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.profile-contact{font-style:normal;margin:18px 0;padding:14px 16px;background:var(--tint);border-left:4px solid var(--cor);border-radius:10px;line-height:1.7;color:var(--esc);overflow-wrap:anywhere}
+.profile-copy h3{margin-top:24px}
+@media(max-width:760px){.profile-contact{font-size:.95rem}.profile-copy h3{margin-top:20px}}
+
+.service-detail#desocupacao-imoveis-arrematados .detail-copy{max-width:860px;margin:0 auto}

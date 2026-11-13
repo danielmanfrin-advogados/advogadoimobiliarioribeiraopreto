@@ -2,7 +2,7 @@ PROJETO: Dr. Daniel Manfrin | Direito Imobiliário e Leilões
 
 DOMINIO_BASE = "https://drdanielmanfrin.vercel.app"
 
-Antes de apontar um domínio próprio, substitua todas as ocorrências de https://drdanielmanfrin.vercel.app nas páginas HTML, no sitemap.xml, em robots.txt e em llms.txt pelo domínio definitivo. O endereço acima é provisório e deve ser confirmado no projeto Vercel antes de enviar o sitemap ao Google. O site usa cartões sociais sem imagem, evitando referenciar um arquivo gerenciado que não exista no Vercel.
+Antes de apontar um domínio próprio, substitua todas as ocorrências de https://drdanielmanfrin.vercel.app nas páginas HTML, no sitemap.xml, em robots.txt e em llms.txt pelo domínio definitivo. O endereço acima é provisório e deve ser confirmado no projeto Vercel antes de enviar o sitemap ao Google. A página Sobre usa um retrato local nos cartões sociais; ao trocar o domínio, atualize também as URLs absolutas de og:image e twitter:image.
 
 1. O que está incluído
 
@@ -10,7 +10,7 @@ O site é estático, feito em HTML, CSS e JavaScript puros. As cinco páginas s�
 
 2. Identificação profissional e revisão antes de publicar
 
-O projeto não inventa número de inscrição, seccional da OAB, endereço, currículo, título ou especialidade. Antes de publicar, confirme a identificação profissional completa, incluindo OAB/UF, valide a descrição da atuação e complete os dados que o profissional efetivamente quiser divulgar. O termo “especialista” foi omitido, pois o Provimento nº 205/2021 da OAB veda anunciar especialidade sem título certificado ou notória especialização nos termos aplicáveis. Confirme a forma final de publicidade com a seccional da OAB competente. As chamadas de contato são neutras e não oferecem preço, gratuidade, desconto ou promessa de êxito.
+O projeto não inventa inscrição OAB/UF, endereço ou currículo. O texto do cabeçalho “Advogado Especialista em Direito Imobiliário e Leilões” foi solicitado pelo responsável pelo site e deve ser confirmado antes de publicar; use-o somente se refletir qualificação verdadeira e comprovável e for compatível com as regras de publicidade da OAB (Provimento nº 205/2021). Confirme a identificação profissional completa, a redação e a forma final de divulgação com a seccional competente. As chamadas de contato são neutras e não oferecem preço, gratuidade, desconto ou promessa de êxito.
 
 Referências oficiais consultadas:
 - Provimento nº 205/2021 do Conselho Federal da OAB: https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf
@@ -23,11 +23,11 @@ O conteúdo do site deve ser revisado pelo advogado antes de entrar no ar. Esta 
 
 Edite somente config.js. Os campos whatsapp e telefone estão em formato internacional, apenas com números: código do Brasil, DDD e número. Para trocar o contato, altere esses dois campos. Todos os botões obtêm o destino dali. Não coloque o número em cada página HTML. O texto padrão de WhatsApp e o nome do site também podem ser ajustados em config.js.
 
-O rastreador usa o endpoint do Apps Script configurado em config.js. Os cliques enviam metadados técnicos descritos na Política de privacidade. O projeto não tem formulário para nome, e-mail ou CPF. Não adicione pixels, analytics, formulários ou cookies sem revisar a política e a configuração antes.
+O rastreador usa o endpoint do Apps Script configurado em config.js. Os cliques enviam metadados técnicos descritos na Política de privacidade. O projeto não tem formulário para nome, e-mail ou CPF; a página Sobre contém um link mailto para o endereço profissional público, que abre o aplicativo de e-mail externo. Não adicione pixels, analytics, formulários ou cookies sem revisar a política e a configuração antes.
 
 4. Imagens
 
-As fotografias ilustrativas foram solicitadas para geração e têm caminhos reservados no armazenamento gerenciado do Manus. O preview do Manus tenta carregar esses arquivos quando a geração estiver concluída. O pacote Vercel contém um SVG neutro local de fallback para que as páginas não fiquem quebradas caso esse armazenamento não esteja acessível fora do Manus. Para exibir fotos próprias no Vercel, exporte os arquivos gerados ou forneça fotos autorizadas, salve-os em img e atualize os atributos de imagem nas páginas HTML para usar caminhos locais, por exemplo /img/hero.jpg. Os prompts e nomes previstos estão em img/PROMPTS.txt. As imagens são ilustrativas e não retratam o advogado, a equipe, clientes ou casos.
+As imagens ilustrativas solicitadas para as demais páginas têm caminhos reservados no armazenamento gerenciado do Manus, e o pacote Vercel usa um SVG neutro local de fallback até a exportação desses arquivos. A página Sobre também contém o retrato institucional publicado no site oficial de Daniel Manfrin, salvo localmente como img/daniel-manfrin-oficial.jpg e identificado como tal na legenda e no texto alternativo. Não apresente imagens ilustrativas como retratos do advogado, da equipe, de clientes ou de imóveis de casos atendidos. Os prompts das ilustrações estão em img/PROMPTS.txt.
 
 5. Apps Script e planilha Google
 
@@ -65,8 +65,8 @@ Crie ou atualize um Perfil da Empresa no Google somente quando houver elegibilid
 9. Estrutura do projeto
 
 - index.html: página inicial.
-- servicos/index.html: áreas de atuação e informações sobre três temas.
-- sobre/index.html: apresentação institucional e aviso para completar identificação.
+- servicos/index.html: áreas de atuação, incluindo leilões, desocupação e imissão na posse, análise documental e contratos.
+- sobre/index.html: biografia institucional, retrato oficial, links de fonte e aviso para completar identificação.
 - perguntas-frequentes/index.html: perguntas e respostas gerais.
 - politica-de-privacidade/index.html: dados e rastreamento.
 - style.css: apresentação responsiva e acessível.
@@ -75,3 +75,10 @@ Crie ou atualize um Perfil da Empresa no Google somente quando houver elegibilid
 - sitemap.xml, robots.txt e llms.txt: apoio à indexação e à leitura por sistemas automatizados.
 - apps-script/Code.gs: integração fornecida para a planilha.
 - build.js, package.json e vercel.json: build e hospedagem estática na Vercel.
+
+
+10. Fontes da biografia e da fotografia
+
+- A página institucional Sobre informa mais de 20 anos de experiência, atuação em Direito Imobiliário e Direito da Saúde e trabalho com prevenção ao bullying e cyberbullying em escolas por programas de Blindagem Escolar: https://www.danielmanfrin.adv.br/about/
+- A página oficial de Direito Imobiliário descreve atuação em contratos de compra e venda, imóveis em leilão, desocupação judicial e regularização: https://www.danielmanfrin.adv.br/advogado-imobiliario-ribeirao-preto
+- O retrato usado em Sobre foi obtido do ativo exibido na página oficial Sobre: https://horizons-cdn.hostinger.com/1800f8d7-109a-4bd2-b3a3-60f6ce4a82b5/e353e5b134f3eca458aae31e82767c55.jpg. O alt text original identifica Daniel Manfrin como advogado. Não altere nem use a imagem como representação de outra pessoa.
