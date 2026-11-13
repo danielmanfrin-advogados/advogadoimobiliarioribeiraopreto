@@ -22,3 +22,12 @@ details{border:1px solid var(--lin);border-radius:16px;background:#fff;margin-bo
 @media(max-width:760px){.profile-contact{font-size:.95rem}.profile-copy h3{margin-top:20px}}
 
 .service-detail#desocupacao-imoveis-arrematados .detail-copy{max-width:860px;margin:0 auto}
+
+
+/* Destaque na home para desocupação e imissão na posse */
+.posse-feature{max-width:960px;margin:28px auto 0;padding:26px 28px;background:#fff;border:1px solid var(--lin);border-left:5px solid var(--gold);border-radius:18px;box-shadow:0 8px 26px rgba(35,32,29,.09)}
+.posse-feature h3{font-size:clamp(1.25rem,2vw,1.55rem);margin-bottom:10px}
+.posse-feature>p:not(.eyebrow){color:var(--mut);max-width:840px;margin:0 0 14px}
+.posse-feature-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.posse-feature-links .text-link{color:var(--esc);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:520px){.posse-feature{padding:22px 20px}.posse-feature-links span[aria-hidden="true"]{display:none}}

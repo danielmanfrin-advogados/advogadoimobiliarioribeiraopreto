@@ -52,7 +52,7 @@ npm run build
 
 O comando de build cria a pasta dist. O projeto contém vercel.json com Framework Preset Other, comando npm run build e diretório de saída dist. Na Vercel, importe o repositório GitHub e confira esses valores antes de concluir. Não há etapa de framework nem dependência externa.
 
-Não publique antes de confirmar OAB/UF, domínio, canal do responsável pela privacidade, prazo de retenção da planilha e imagens que devem ser servidas pelo Vercel. A política de privacidade descreve a coleta atual, mas o responsável deve confirmar a configuração e o período real de retenção antes do lançamento.
+A inscrição OAB/SP 215.246 foi informada pelo responsável e incluída no site; confirme sua exatidão e a forma de exibição. Não publique antes de confirmar domínio, canal do responsável pela privacidade, prazo de retenção da planilha e imagens que devem ser servidas pelo Vercel. A política de privacidade descreve a coleta atual, mas o responsável deve confirmar a configuração e o período real de retenção antes do lançamento.
 
 7. Google Search Console
 
@@ -79,6 +79,7 @@ Crie ou atualize um Perfil da Empresa no Google somente quando houver elegibilid
 
 10. Fontes da biografia e da fotografia
 
-- A página institucional Sobre informa mais de 20 anos de experiência, atuação em Direito Imobiliário e Direito da Saúde e trabalho com prevenção ao bullying e cyberbullying em escolas por programas de Blindagem Escolar: https://www.danielmanfrin.adv.br/about/
-- A página oficial de Direito Imobiliário descreve atuação em contratos de compra e venda, imóveis em leilão, desocupação judicial e regularização: https://www.danielmanfrin.adv.br/advogado-imobiliario-ribeirao-preto
+- A página institucional Sobre foi consultada para a atribuição da fotografia oficial de Daniel Manfrin: https://www.danielmanfrin.adv.br/about/
+- A página oficial de Direito Imobiliário apresenta informações sobre atuação em contratos, imóveis em leilão, desocupação e regularização: https://www.danielmanfrin.adv.br/advogado-imobiliario-ribeirao-preto/
+- A inscrição OAB/SP 215.246 foi informada pelo responsável pelo site e incluída na identificação profissional.
 - O retrato usado em Sobre foi obtido do ativo exibido na página oficial Sobre: https://horizons-cdn.hostinger.com/1800f8d7-109a-4bd2-b3a3-60f6ce4a82b5/e353e5b134f3eca458aae31e82767c55.jpg. O alt text original identifica Daniel Manfrin como advogado. Não altere nem use a imagem como representação de outra pessoa.

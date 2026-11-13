@@ -3,8 +3,8 @@
 Advogado com atuação em Direito Imobiliário e leilões de imóveis, com atendimento remoto em todo o Brasil. O conteúdo do site é informativo e não substitui a avaliação individual de documentos e circunstâncias.
 
 ## Páginas
-- [Atuação](https://drdanielmanfrin.vercel.app/servicos/): informações gerais sobre assessoria em leilões, análise documental e contratos imobiliários.
-- [Sobre](https://drdanielmanfrin.vercel.app/sobre/): apresentação e dados profissionais a confirmar antes da publicação.
+- [Atuação](https://drdanielmanfrin.vercel.app/servicos/): informações gerais sobre leilões, análise documental e contratos imobiliários, desocupação de imóveis arrematados e imissão na posse.
+- [Sobre](https://drdanielmanfrin.vercel.app/sobre/): apresentação da atuação em Direito Imobiliário e leilões, com identificação profissional OAB/SP 215.246.
 - [Perguntas frequentes](https://drdanielmanfrin.vercel.app/perguntas-frequentes/): respostas gerais sobre documentos, leilões e atendimento.
 - [Política de privacidade](https://drdanielmanfrin.vercel.app/politica-de-privacidade/): dados técnicos registrados pelos cliques de contato.
 
@@ -12,6 +12,7 @@ Advogado com atuação em Direito Imobiliário e leilões de imóveis, com atend
 - Assessoria jurídica em leilões de imóveis: Análise jurídica de informações e documentos disponíveis antes de uma decisão relacionada a imóvel levado a leilão.
 - Análise documental imobiliária: Leitura de documentos ligados a imóvel e operação, com escopo definido conforme o contexto e os arquivos disponíveis.
 - Contratos imobiliários: Análise ou elaboração de instrumentos relacionados a negócios imobiliários, conforme a finalidade e a documentação apresentada.
+- Desocupação de imóveis arrematados e imissão na posse: análise da documentação da arrematação, da ocupação e das medidas cabíveis, conforme o tipo de leilão e as circunstâncias do caso.
 
 ## Perguntas e respostas
 ### O que deve ser analisado antes de participar de um leilão de imóvel?
@@ -36,3 +37,6 @@ Use o WhatsApp ou o telefone indicados nesta página e descreva o assunto, o est
 
 ## Observação
 Informações gerais. Cada situação depende dos documentos e das circunstâncias específicas. Não há promessa de resultado, preço ou prazo.
+
+## Site oficial
+- [Atuação imobiliária e leilões de imóveis](https://www.danielmanfrin.adv.br/advogado-imobiliario-ribeirao-preto/)
