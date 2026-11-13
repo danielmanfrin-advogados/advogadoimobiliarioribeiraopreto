@@ -1,15 +1,15 @@
 IMAGENS DO SITE
 
-As imagens fotográficas foram solicitadas para geração como ilustrações do site e têm caminhos reservados em armazenamento gerenciado do Manus. Os caminhos locais abaixo funcionam como fallback neutro no pacote Vercel. Para distribuir as fotografias fora do Manus, exporte os arquivos gerados do armazenamento do projeto e salve-os na pasta img com estes nomes. Não use imagens do advogado, equipe, cliente ou casos sem autorização.
+As cinco imagens fotográficas ilustrativas originalmente armazenadas no Manus foram exportadas para esta pasta em formato WebP. Os HTMLs usam caminhos locais `/img/*.webp`; o build copia os arquivos para `dist/img/` e eles são versionados no GitHub para que a publicação na Vercel os sirva. O retrato real do advogado é um arquivo separado. Não use imagens do advogado, equipe, cliente ou casos sem autorização.
 
-Arquivos previstos: hero.jpg (horizontal 16:9); sobre.jpg (4:3); assessoria-em-leiloes-de-imoveis.jpg (4:3); analise-documental-imobiliaria.jpg (4:3); contratos-imobiliarios.jpg (4:3).
+Arquivos previstos: hero.webp (horizontal 16:9); sobre.webp (4:3); assessoria-em-leiloes-de-imoveis.webp (4:3); analise-documental-imobiliaria.webp (4:3); contratos-imobiliarios.webp (4:3).
 
-PROMPT hero.jpg: Realistic candid smartphone photograph of a modest Brazilian home viewed from the street, a folder of property documents and keys subtly in foreground, natural daylight, no identifiable people, no text or logos, no readable documents or signs, subdued navy and warm sand tones, wide 16:9, documentary rather than commercial.
+PROMPT hero.webp: Realistic candid smartphone photograph of a modest Brazilian home viewed from the street, a folder of property documents and keys subtly in foreground, natural daylight, no identifiable people, no text or logos, no readable documents or signs, subdued navy and warm sand tones, wide 16:9, documentary rather than commercial.
 
-PROMPT sobre.jpg: Realistic candid smartphone photograph of a simple desk with a property registry folder, house key, pen and architectural plan, natural window light, no visible personal data, no people or text, 4:3, restrained neutral colors.
+PROMPT sobre.webp: Realistic candid smartphone photograph of a simple desk with a property registry folder, house key, pen and architectural plan, natural window light, no visible personal data, no people or text, 4:3, restrained neutral colors.
 
-PROMPT assessoria-em-leiloes-de-imoveis.jpg: Realistic candid smartphone photograph of a laptop with blurred property listing and printed auction notice pages, a simple house model and pen, Brazilian home-office setting, no readable text, no logo, 4:3.
+PROMPT assessoria-em-leiloes-de-imoveis.webp: Realistic candid smartphone photograph of a laptop with blurred property listing and printed auction notice pages, a simple house model and pen, Brazilian home-office setting, no readable text, no logo, 4:3.
 
-PROMPT analise-documental-imobiliaria.jpg: Realistic candid smartphone photograph of hands reviewing blurred property registry and contract pages with pen and key on simple desk, natural light, no faces or readable text, 4:3.
+PROMPT analise-documental-imobiliaria.webp: Realistic candid smartphone photograph of hands reviewing blurred property registry and contract pages with pen and key on simple desk, natural light, no faces or readable text, 4:3.
 
-PROMPT contratos-imobiliarios.jpg: Realistic candid smartphone photograph of unreadable residential purchase agreement, pen, key ring and modest house model on simple table, natural daylight, no names, signatures, or logos, 4:3.
+PROMPT contratos-imobiliarios.webp: Realistic candid smartphone photograph of unreadable residential purchase agreement, pen, key ring and modest house model on simple table, natural daylight, no names, signatures, or logos, 4:3.
