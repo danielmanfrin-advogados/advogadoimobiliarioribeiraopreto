@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://drdanielmanfrin.vercel.app/sitemap.xml
+Sitemap: https://advogadoimobiliarioribeiraopreto.vercel.app/sitemap.xml
